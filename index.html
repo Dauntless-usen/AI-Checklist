@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI Verification Checklist | by UsenPrime</title>
+<meta name="description" content="A free one-page checklist on spotting AI deception and checking before you share. A gift from Prime (Emmanuel Usen).">
+<style>
+:root{--ink:#17251f;--green:#245c4a;--mint:#d3e6da;--paper:#f6f4ec;--orange:#e4572e;--gold:#f4b920;--mute:#5b6a63;--line:#d9d6c8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 72px}
+.mono{font-family:ui-monospace,"SF Mono",Consolas,monospace}
+.gift{color:var(--orange);font-weight:700;letter-spacing:.04em}
+.stars{color:var(--gold);font-size:22px;letter-spacing:.3em}
+h1{font:900 clamp(34px,8vw,60px)/1.02 "Arial Black","Segoe UI",Impact,sans-serif;text-transform:uppercase;margin:14px 0 14px;letter-spacing:-.01em}
+h2{font:800 clamp(24px,5vw,34px)/1.1 "Arial Black","Segoe UI",sans-serif;text-transform:uppercase;margin:0 0 6px}
+.lede{font-size:19px;max-width:34em;margin:0 0 6px}
+.by{color:var(--mute);margin:0}
+section{margin-top:56px;padding-top:28px;border-top:3px solid var(--ink)}
+.part{color:var(--green);font-weight:700;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 20px}
+/* habits */
+.track{display:flex;align-items:center;gap:14px;margin:0 0 18px;position:sticky;top:0;background:var(--paper);padding:10px 0;z-index:2}
+.bar{flex:1;height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--green);transition:width .25s}
+.count{font-weight:700;min-width:11.5em;text-align:right}
+.habit{display:flex;gap:14px;padding:16px;margin:0 0 10px;background:#fff;border:2px solid var(--ink);border-radius:10px;cursor:pointer}
+.habit:has(input:checked){background:var(--mint);border-color:var(--green)}
+.habit:has(input:focus-visible){outline:3px solid var(--orange);outline-offset:2px}
+.habit input{width:26px;height:26px;margin-top:2px;accent-color:var(--green);flex:none;cursor:pointer}
+.habit b{display:block}
+.habit span{color:var(--mute)}
+.habit:has(input:checked) span{color:var(--ink)}
+.done{display:none;margin:16px 0 0;padding:14px 16px;background:var(--gold);border-radius:10px;font-weight:700}
+.done.on{display:block}
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{padding:8px 14px;border:2px solid var(--orange);border-radius:999px;font-weight:600;background:#fff}
+.chips li.hard{background:var(--orange);color:#fff}
+/* scope */
+.scope{display:grid;gap:10px;padding:0;margin:0;list-style:none}
+.scope li{display:flex;gap:16px;align-items:center;padding:12px 16px;background:#fff;border-left:8px solid var(--green);border-radius:6px}
+.scope .l{font:900 30px/1 "Arial Black",sans-serif;color:var(--green);width:1.1em;flex:none}
+.scope b{display:block;font-size:15px;color:var(--green)}
+/* myths */
+.myth{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0 0 12px;border:2px solid var(--ink);border-radius:10px;overflow:hidden;background:#fff}
+.myth div{padding:14px 16px}
+.myth .m{background:#fbe6df}
+.myth .r{background:var(--mint)}
+.myth small{display:block;font-weight:800;letter-spacing:.06em;margin-bottom:2px}
+.m small{color:var(--orange)}.r small{color:var(--green)}
+@media(max-width:560px){.myth{grid-template-columns:1fr}.count{min-width:0;font-size:14px}}
+blockquote{margin:44px 0 0;padding:22px 24px;background:var(--ink);color:#fff;border-radius:12px;font-size:20px}
+blockquote b{color:var(--gold)}
+.practice{margin-top:22px}
+a{color:var(--green);font-weight:600}
+a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.thanks{text-align:center}
+.thanks h2{font-size:clamp(34px,9vw,56px)}
+.links{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;margin-top:14px}
+.small{color:var(--mute);font-size:15px;margin-top:22px}
+@media(prefers-reduced-motion:reduce){.bar i{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="stars" aria-hidden="true">★ ★</div>
+  <div class="gift mono">[ A gift from Prime ]</div>
+  <h1>The AI Verification Checklist</h1>
+  <p class="lede">How to tell what is real, and what to do before you share. Condensed to one free page.</p>
+  <p class="by">Everything from the SMILC session: the routine, the SCOPE check and the myths. Five minutes, no sign-up.</p>
+  <p class="by"><b>Emmanuel Usen</b> &middot; UsenPrime</p>
+</header>
+
+<section id="habits">
+  <p class="part mono">Part One &middot; The Routine</p>
+  <h2>Five habits that stop a lie</h2>
+  <p class="sub">Tick each one as you commit to it.</p>
+  <div class="track" aria-live="polite">
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><i></i></div>
+    <div class="count mono">0/5 habits checked</div>
+  </div>
+  <label class="habit"><input type="checkbox"><div><b>Pause before you forward</b><span>If a post makes you furious, scared or thrilled, slow down first. That feeling is what the post is built to trigger.</span></div></label>
+  <label class="habit"><input type="checkbox"><div><b>Trace the original</b><span>Find who published it first, and when. Run images through Google Lens or another reverse image search. Results are leads, not verdicts.</span></div></label>
+  <label class="habit"><input type="checkbox"><div><b>Search the exact claim</b><span>Look up the exact quote, names and numbers. A screenshot alone is weak evidence.</span></div></label>
+  <label class="habit"><input type="checkbox"><div><b>Compare independent sources</b><span>Three reposts of the same rumour are still one source. Look for credible, separate confirmation.</span></div></label>
+  <label class="habit"><input type="checkbox"><div><b>Decide, and be honest about it</b><span>Share with context, report it, or leave it alone. &ldquo;Unverified&rdquo; is a valid answer.</span></div></label>
+  <p class="done" id="done">All five checked. Verify first, share second. 🎉</p>
+</section>
+
+<section id="never">
+  <p class="part mono">Quick Reference</p>
+  <h2>Never forward these without checking</h2>
+  <p class="sub">If it matches one of these, stop and run the routine.</p>
+  <ul class="chips">
+    <li>Voice notes asking for money</li>
+    <li>Urgent &ldquo;send it now&rdquo; messages</li>
+    <li>Quote screenshots with no link</li>
+    <li>Videos with no source or location</li>
+    <li>&ldquo;Share with 10 people&rdquo; chains</li>
+    <li>Clips that just confirm what you already believe</li>
+    <li>Anything you cannot trace to an original</li>
+    <li class="hard">Intimate or humiliating images of anyone: never create or share</li>
+  </ul>
+</section>
+
+<section id="scope">
+  <p class="part mono">Part Two &middot; Using AI Yourself</p>
+  <h2>The SCOPE check</h2>
+  <p class="sub">Run it before you use or share anything AI helped make.</p>
+  <ul class="scope">
+    <li><span class="l">S</span><div><b>Source</b>Can I verify the facts from reliable sources?</div></li>
+    <li><span class="l">C</span><div><b>Consent</b>Do I have permission to use someone&rsquo;s face, voice, work or data?</div></li>
+    <li><span class="l">O</span><div><b>Ownership</b>Have I disclosed AI help where it is required?</div></li>
+    <li><span class="l">P</span><div><b>Privacy</b>Am I sharing private or identifying information I do not need to?</div></li>
+    <li><span class="l">E</span><div><b>Effect</b>Who could be harmed if this is wrong, biased or misleading?</div></li>
+  </ul>
+  <p class="small">For health, money, safety or reputation, add a qualified human. AI can inform a decision. You remain responsible for it.</p>
+</section>
+
+<section id="myths">
+  <p class="part mono">Myths vs. Reality</p>
+  <h2>What most people get wrong</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>An AI detector will tell me.</div><div class="r"><small class="mono">REALITY</small>Detectors give false positives and false negatives. A score is a signal, not proof.</div></div>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>It looks perfect, so it is real.</div><div class="r"><small class="mono">REALITY</small>Polish proves nothing. Fluent, realistic output can still be false.</div></div>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>Only deepfake videos are the danger.</div><div class="r"><small class="mono">REALITY</small>Misleading AI text can persuade as well as deepfakes (IPIE, May 2026).</div></div>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>An earlier upload proves the post is fake.</div><div class="r"><small class="mono">REALITY</small>It is a lead, not a verdict. Check the date, place and context too.</div></div>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>It sounds like my friend, so it is my friend.</div><div class="r"><small class="mono">REALITY</small>Voices can be cloned. Call back on a number you already trust.</div></div>
+  <div class="myth"><div class="m"><small class="mono">MYTH</small>Content Credentials or watermarks prove it is true.</div><div class="r"><small class="mono">REALITY</small>Provenance tells you about a file&rsquo;s history. It does not prove the caption is true.</div></div>
+
+  <blockquote>Don&rsquo;t just ask <b>&ldquo;Does it look real?&rdquo;</b><br>Ask <b>&ldquo;What evidence supports it?&rdquo;</b></blockquote>
+  <p class="practice">Want to practise? Try the <a href="https://britannicaeducation.com/blog/quiz-real-or-ai/" target="_blank" rel="noopener">Britannica &ldquo;Real or AI&rdquo; quiz</a>. Pick the real image, then check the clues.</p>
+</section>
+
+<section class="thanks">
+  <p class="gift mono">[ Thanks for coming ]</p>
+  <h2>Thank you</h2>
+  <p class="by"><b>Emmanuel Usen</b> &middot; UsenPrime</p>
+  <div class="links">
+    <a href="mailto:usen.emmanuel1000@gmail.com">usen.emmanuel1000@gmail.com</a>
+    <a href="https://x.com/usenprime" target="_blank" rel="noopener">@usenprime</a>
+    <a href="https://www.linkedin.com/in/emmanuel-ezekiels" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://usen.netlify.app" target="_blank" rel="noopener">Portfolio</a>
+  </div>
+  <p class="small">Built by Prime, for you. Screenshot this page or bookmark it. It is free, always.</p>
+</section>
+</main>
+<script>
+(function(){
+  var boxes=document.querySelectorAll('.habit input');
+  var bar=document.querySelector('.bar'),fill=bar.querySelector('i');
+  var count=document.querySelector('.count'),done=document.getElementById('done');
+  function update(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++});
+    fill.style.width=(n/boxes.length*100)+'%';
+    bar.setAttribute('aria-valuenow',n);
+    count.textContent=n+'/'+boxes.length+' habits checked';
+    done.classList.toggle('on',n===boxes.length);
+  }
+  boxes.forEach(function(b){b.addEventListener('change',update)});
+})();
+</script>
+</body>
+</html>
